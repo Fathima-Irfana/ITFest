@@ -1,0 +1,298 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Demand Corporate Category Flat Bootstrap Responsive Website Template | About :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Demand Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	<script>
+
+		var msg="{{msg}}";
+		if(msg!="")
+		alert(msg)
+	
+	</script>
+	
+	<!-- css files -->
+    <link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="../static/css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
+	<style>
+		.txtBox{
+			width: 200px;
+			padding: 5px;
+			margin: 5px;
+		}
+		#fp:hover{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<!-- header -->
+<header>
+	<div class="container">
+		<!-- nav -->
+		<nav class="py-3 d-lg-flex">
+			<div id="logo">
+				<h1> <a href="index.html"><span class="fa fa-line-chart"></span> Demand </a></h1>
+			</div>
+			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+			<input type="checkbox" id="drop" />
+            <ul class="menu ml-auto mt-1">
+				<li class="active"><a href="{% url 'index' %}">Home</a></li>
+                <li class=""><a href="{% url 'about' %}">About Us</a></li>
+                <li class=""><a href="{% url 'collegereg' %}">College</a>
+                <li class=""><a href="{% url 'companyreg' %}">Company</a>
+				<li class=""><a href="{% url 'login' %}">Login</a></li>
+</li>
+			
+			
+			</ul>
+		</nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+
+<!-- inner-banner -->
+<section class="inner-banner" id="home">
+	<div class="inner-layer">
+		<div class="container">
+		</div>
+	</div>
+</section>
+<!-- //inner-banner -->
+
+<!-- breadcrumb -->
+<div class="breadcrumb-w3pvt bg-light">
+	<div class="container">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="{% url 'index' %}">Home</a>
+			</li>
+			<li class="breadcrumb-item" aria-current="page">Login</li>
+		</ol>
+	</nav>
+	</div>
+</div>
+<div class="contact-top">
+    <h3 align="center">Login Here..</h3>
+    <br><br>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+<!-- <h1 align="center">Category</h1> -->
+<table align="center">
+
+<tr><th>Username</th><td><input type="email" class="txtBox" name="username" required=""></td></tr>
+<tr><th>Password</th><td><input type="password" class="txtBox" name="password" required=""></td></tr>
+<tr><td colspan="2" class="text-center"><p id="fo" onclick="fun()">Forget Password</p><input type="submit" align="center" name="submit" value="LOGIN" class="btn btn-success"></td></tr>
+</table>
+</form>
+</div>	
+<footer class="footer py-md-5 pt-4 pb-5">
+	<div class="container pt-4">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 footer-top">
+				<h4 class="mb-sm-4 mb-3 w3f_title">Contact Info</h4>
+				<ul class="list-w3">
+					<li><span class="fa mr-1 fa-map-marker"></span>2130 Fulton Street, San Diego, CA 94117-1080 USA</li>
+					<li class="my-2"><span class="fa mr-1 fa-phone"></span>1-600-1234-567</li>
+					<li class="my-2"><span class="fa mr-1 fa-phone"></span>1-600-1234-567</li>
+					<li class=""><span class="fa mr-1 fa-envelope"></span><a href="mailto:info@example.com">info@example.com</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-sm-6 footv3-left mt-sm-0 mt-4">
+				<h4 class="mb-sm-4 mb-3 w3f_title"> Our Platforms</h4>
+				<ul class="list-w3">
+					<li class="my-2">
+						<a href="about.html">
+							Digital Trade Marketing
+						</a>
+					</li>
+					<li class="mb-2">
+						<a href="features.html">
+							Software Development
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="projects.html">
+							Cloud Marketing
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="blogs.html">
+							Business Intelligence
+						</a>
+					</li>
+					<li>
+						<a href="contact.html">
+							Modern Technology
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-sm-4 mt-lg-0 mt-sm-5 mt-4">
+				<h4 class="mb-sm-4 mb-3 w3f_title">Media Center</h4>
+				<ul class="list-w3">
+					<li class="my-2">
+						<a href="#">
+							Press Release
+						</a>
+					</li>
+					<li class="mb-2">
+						<a href="features.html">
+							Vision & Values
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="security.html">
+							Winning Awards
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="pricing.html">
+							Networking
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-lg-2 col-sm-4 mt-lg-0 mt-sm-5 mt-4">
+				<h4 class="mb-sm-4 mb-3 w3f_title">Resources</h4>
+				<ul class="list-w3">
+					<li class="my-2">
+						<a href="#">
+							24/7 Help Line
+						</a>
+					</li>
+					<li class="mb-2">
+						<a href="#">
+							Nearest Branch
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="#">
+							Guidance
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="#">
+							Download
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Mobile App
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="col-lg-2 col-sm-4 mt-lg-0 mt-sm-5 mt-4">
+				<h4 class="mb-4 w3f_title">Other Links</h4>
+				<ul class="list-w3">
+					<li class="my-2">
+						<a href="services.html">
+							Our Services
+						</a>
+					</li>
+					<li class="mb-2">
+						<a href="about.html">
+							About Us
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="blog.html">
+							Company Blog
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="contact.html">
+							Contact Us
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	<!-- //footer bottom -->
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<section class="copy-right py-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<p class="">© 2021
+				</p>
+			</div>
+			<div class="col-lg-5">
+				<ul class="list-w3 d-sm-flex">
+					<li>
+						<a href="#">
+							Privicy Policy
+						</a>
+					</li>
+					<li class="mx-4">
+						<a href="#">
+							Terms & Conditions
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Disclaimer.
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //copyright -->
+
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->
+<script>
+	function fun(){
+		alert("Email Send to mail ID");
+	}
+</script>
+</body>
+</html>
